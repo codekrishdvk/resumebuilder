@@ -1,0 +1,81 @@
+
+.nav-link{
+    position: relative;
+}
+.nav-link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:  #7952b3;
+    position: absolute;
+    left:0;
+    bottom:-3px;
+    transition: 0.5s;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+.carousel-img{
+    position: relative;
+
+}
+.carousel-img::before{
+    content: '';
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.carousel-h3,
+.carousel-p{
+    position: relative;
+    z-index: 2;
+}
+.text-design{
+    font-style: normal;
+    background: linear-gradient(320deg, #7C84F3, #FF4DD2, #FF993B, #FF4DD2, #7C84F3, #FF4DD2, #FF993B);
+    background-size: 400% 400%;
+    -webkit-animation: buttonGradient 45s ease infinite;
+    -moz-animation: buttonGradient 45s ease infinite;
+    animation: buttonGradient 45s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    transform: translateY(-5px);
+}
+.social-icons a:nth-child(1):hover{
+    background: linear-gradient(#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D,#F77737);
+    -webkit-animation: buttonGradient 45s ease infinite;
+    -moz-animation: buttonGradient 45s ease infinite;
+    animation: buttonGradient 45s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.social-icons a:nth-child(2):hover{
+    color: #00acee;
+}
+.social-icons a:nth-child(3):hover{
+    color: #0072b1;
+}
+.social-icons a:nth-child(4):hover{
+    color: grey;
+}
+.footer-links ul li a{
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+}
